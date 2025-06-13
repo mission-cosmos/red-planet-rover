@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red-Planet Rover</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  Hello world
+  <h1>Red-Planet Rover 🚀</h1>
+  <canvas id="gameCanvas" width="640" height="360"></canvas>
+  <p id="score">Water Points: 0</p>
+  <p id="status"></p>
+
+  <script>
+    window.assets = {};
+    ["mars_hills.png","rover.png","ice.png","dust.png","rock.png"]
+      .forEach(src => {
+        const img = new Image();
+        img.src = src;
+        window.assets[src] = img;
+      });
+    console.log("Loaded assets:", window.assets);
+  </script>
+
   <script src="script.js"></script>
 </body>
-
 </html>
