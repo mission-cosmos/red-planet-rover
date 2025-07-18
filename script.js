@@ -8,7 +8,7 @@ const { "mars_hills.png": hillsImg,
   "dust.png": dustImg,
   "rock.png": rockImg } = window.assets;
 
-// Parallax offset
+
 let hillOffset = 0;
 
 // Rover as sprite
